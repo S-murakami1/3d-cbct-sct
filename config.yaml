@@ -1,0 +1,19 @@
+# Patch size, batch size, epochs, and learning rate stay in the nnUNet trainer and plans.
+# Directories are environment variables, not this file:
+#   nnUNet_raw, nnUNet_preprocessed, nnUNet_results, WORK_PREFIX
+# Unset values default to raw, preprocessed, results, and data/work under the repo root.
+
+dataset_name: Head
+hu_clip: [-1000, 3000]  # CBCT and CT, and CTNormalization_clip. Changing this needs prepare again
+cbct_dataset_id: 93  # CT dataset is this id + 1
+teacher_dataset_id: 95 # Pseudo labels dataset
+
+remove_cases: [] # dropped bad registration cases
+
+
+test_cases: []  # Test cases. Empty keeps every case in training cases
+split_seed: 42  # 5-fold patient split of imagesTr
+
+afp_weight: 1.0  # weight on feature L1
+mae_weight: 0.5  # weight on image L1
+teacher_checkpoint:  # empty = SegScratch checkpoint_best under nnunet_results
