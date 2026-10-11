@@ -37,7 +37,9 @@ uv run python core/run_elastix_deformable.py --src data/work/rigid --dst data/wo
 uv run python core/prepare_training_data.py --config config.yaml
 ```
 
-FOV figures: `data/work/rigid/fovMasks/vis`. Registration figures: `data/work/deformable/vis`. Fixed image is CBCT. `prepare_training_data.py` resumes with `--from` and `--to` (`pair`, `preprocess`, `link`).
+FOV figures: `data/work/rigid/fovMasks/vis`.
+Registration figures: `data/work/deformable/vis`.
+Fixed image is CBCT.
 
 `test_cases: [P001_1, P002_1]` writes those cases to `imagesTs`. Empty keeps every case in `imagesTr`.
 
