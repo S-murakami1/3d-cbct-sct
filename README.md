@@ -76,8 +76,7 @@ uv run python core/evaluate_sct.py --trainer nnUNetTrainerMRCT_mae_scratch300
 uv run python core/evaluate_sct.py --trainer nnUNetTrainerMRCT_AFP_scratch300
 ```
 
-Output: `results/eval/<trainer>/fold_0/test/`. `metrics_geom.json` holds MAE, PSNR, and NCC inside the geometric FOV (the reported score). HU volumes are in `hu/`, figures in `viz/`. `--split train` evaluates `imagesTr`; `--fold`, `--plans`, and `--checkpoint` select the model. The script wraps `nnUNetv2_predict`, `core/denorm_predictions_to_hu.py`, `core/eval_mae_body_mask.py`, and `core/viz_sct_results.py`.
-
+Output: `results/eval/<trainer>/fold_0/test/`. `metrics_geom.json` holds MAE, PSNR, and NCC inside the geometric FOV (the reported score).
 ## References
 
 1. Longuefosse et al. "[Adapted nnU-Net: A Robust Baseline for Cross-Modality Synthesis and Medical Image Inpainting](https://doi.org/10.1007/978-3-031-73281-2_3)". *SASHIMI*, 2024.
