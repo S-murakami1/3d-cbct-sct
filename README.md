@@ -1,5 +1,5 @@
 
-# 3dcbct-sct
+# 3D cbct-sct
 
 3D CBCT to synthetic CT. This repository is built upon [nnUNet_translation](https://github.com/phyrise/nnUNet_translation) 
 
@@ -7,7 +7,7 @@
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
-cd cbct-sct-3d
+cd 3d-cbct-sct
 uv python install 3.11
 uv sync --python 3.11
 uv sync --project totalseg --python 3.11
