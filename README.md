@@ -6,9 +6,9 @@
 ## Environment
 
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
 git clone git@github.com:S-murakami1/3d-cbct-sct.git
 cd 3d-cbct-sct
+curl -LsSf https://astral.sh/uv/install.sh | sh
 uv python install 3.11
 uv sync --python 3.11
 uv sync --project totalseg --python 3.11
