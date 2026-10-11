@@ -22,7 +22,7 @@ Elastix 5.2.0 (Linux x86-64) is not in git. Parameters are in `core/synthrad2025
 bash scripts/fetch_elastix.sh
 ```
 
-## Data
+## Data Preprocessing
 
 
 ```bash
