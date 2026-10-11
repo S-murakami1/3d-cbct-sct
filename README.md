@@ -1,5 +1,5 @@
 
-# cbct-sct-3d
+# 3dcbct-sct
 
 3D CBCT to synthetic CT. This repository is built upon [nnUNet_translation](https://github.com/phyrise/nnUNet_translation) 
 
